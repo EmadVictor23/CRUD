@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>CRUD SYSTEM</title>
+</head>
+<body>
+    
+
+<div class="form">
+<div class="title">
+    <h2>CRUD</h2>
+    <p>PRODUCT MANAGEMENT SYSTEM</p>
+</div>
+<div class="inputs">
+    <label class="is-invalid" for="productName">product name</label>
+    <input oninput="validName ()" type="text" id="productName" class="form-control">
+    <p id="messageName" class="alert alert-danger d-none">the Name is in valid</p>
+    <label for="productPrice">product price</label>
+    <input oninput="validPrice ()" type="number" id="productPrice" class="form-control">
+    <p id="messagePrice" class="alert alert-danger d-none ">the Price is in valid</p>
+    <label for="productCategory">product category</label>
+    <input type="text" id="productCategory" class="form-control">
+    <label for="productDesc">product descreption</label>
+<input type="text" id="productDesc" class="form-control"> <button id="submit" >Create</button>
+</div>
+<div class="deleteAll" id="deleteAll"></div>
+
+<label for="Search"> search ....</label>
+<input oninput="searchProduct (this.value)" type="text" id="Search">
+<div class="btnSearch">
+    <button onclick="getSearchMood (this.id)" id="searchName" >search By Name</button>
+<button onclick="getSearchMood (this.id)" id="searchCategory" >search By Category</button>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>index</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Descreption</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody">
+
+    </tbody>
+</table>
+</div>
+
+
+
+
+<script src="./CSS/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

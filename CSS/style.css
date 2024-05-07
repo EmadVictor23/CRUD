@@ -1,0 +1,87 @@
+* {
+    margin:  0;
+    padding: 0;
+}
+
+body {
+    background-color: #222;
+    color: white;
+}
+.form {
+    width: 80%;
+    margin: auto;
+}
+
+.title {
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+.title p {
+    font-size: 25px;
+}
+
+input {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: none;
+    background-color: #111;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 6px;
+    color: #fff;
+    border-radius: 10px;
+
+}
+
+input:focus {
+    background-color: black;
+transform: scale(1.1);
+}
+
+#productDesc {
+    height: 50px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+}
+
+table th {
+    text-transform: uppercase;
+}
+
+table th , td {
+    padding: 5px;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #c206b9;
+    color: #fff;
+    border-radius: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    
+}
+
+button:hover {
+    background-color: #ca6cc5;
+    letter-spacing: 1px;
+
+}
+
+
+.btnSearch button {
+    width: 45%;
+
+}
+.btnSearch {
+    display: flex;
+    justify-content: space-between;
+}
